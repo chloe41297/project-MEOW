@@ -1,0 +1,10 @@
+.js-dDayForm{
+    margin: 5px 0px;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.dDay__output{ 
+  width: 100px;
+}

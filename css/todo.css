@@ -1,0 +1,14 @@
+.js-toDoList {
+    display: inline-block;
+    justify-content: space-between;
+}
+.js-toDoForm input{
+   font-size: 15px; 
+    background: transparent;
+}
+.js-toDoList li{
+    white-space: nowrap;
+    display: block;
+    justify-content: flex-start;
+    font-size: 20px;
+}
