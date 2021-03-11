@@ -1,15 +1,16 @@
 .input__username{
-  
+    color:#95afc0;
     font-size: 30px;
     text-align: center;
     margin-top: 60px;
     border:none;
     background: transparent;
     border-bottom: 1px solid rgba(0,0,0,0.2);
-    
+    font-family: 'Dancing Script', cursive;
 }
 .form,
 .input__username__output{
+    color:#95afc0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +19,7 @@
 }
 .showing{
     margin-top: 60px;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 800;
     display: flex;
     justify-content: center;
@@ -35,9 +36,17 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    color:#95afc0;
     
 }
 .get-start__icon a {
     text-decoration: none;
     color:black;
+}
+.input__username__output{
+    align-items: center;
+    margin-top: 300px;
+}
+.disappear{
+    display: none;
 }

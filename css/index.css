@@ -1,5 +1,5 @@
 .get-start__body{
-    background-color:  #f8efd4;
+    background-color:  #222f3e;
 }
 
 .get-start{
@@ -12,24 +12,43 @@
 .get-start h1{
     font-size: 50px;
     font-weight: 800;
-    margin-top: 250px;
-    margin-bottom: 20px;
+    margin-top: 40vh;
+    color:#95afc0;
+    
 }
 .start__btn{
-   
-    font-size: 30px;
-    padding: 30px 40px;
-    background-color:#e17055;
-    border-radius: 10px; 
-    color: white;
-    font-weight: 800;
-    margin-top: 50px;
-    box-shadow:gray 2px 2px 2px 2px;
+    margin-top: 10vh;
+    position: relative;
+ }
 
-    }
-.start__btn a{
+.start__btn-cat{
     text-decoration: none;
-    color: white;
+    color:black;
+    font-size: 80px;
+}
+.start__btn a:hover ~.start__btn-chat{
+    color:  #feca57;
+}
+.start__btn a:hover >.start__btn-cat{
+    color:  #feca57;
+}
+.start__btn a:hover ~.start__btn-chat div{
+    color:  #feca57;
+}
+.start__btn-chat{
+    position:absolute;
+    font-size: 50px;
+    top:-35px;
+    right:-65px;
+    color: #222f3e;
+}
+
+.start__btn-chat div{
+    font-size: 23px;
+    position: absolute;
+    top:8px;
+    left:13px;
+    font-family: 'Dancing Script', cursive;
 }
 @keyframes hideScreen{
     from   {
@@ -40,15 +59,24 @@
         visibility: hidden;
     }
 }
+
 .splash-screen {
-    
     position:absolute;
     top:0;
-    background-color: #f8efd4;
+    background-color: #222f3e;
     width: 100vw;
     height: 100vh;
     animation: hideScreen 1s ease-in-out forwards;
     animation-delay: 2s;
+    display: flex;
+    justify-content: center;
+
+}
+.splash-screen__title{
+    margin-top: 37vh;
+    color: #feca57;
+    font-size: 90px;
+
 }
 @keyframes blinkPaws{
   0%{
@@ -61,7 +89,7 @@
       opacity: 0;
   }
 }
-
+/*
 .splash-screen__icons{
     color: #222831;
     font-size: 50px;
@@ -127,4 +155,4 @@
     animation: blinkPaws 1s ease-in-out forwards;
     animation-delay: 3s;
     
-}
+}*/

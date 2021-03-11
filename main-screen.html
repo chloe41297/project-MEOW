@@ -2,13 +2,14 @@
 <html lang="eng">
     <head>
         <link rel="stylesheet" href="./css/style.css">
+        <meta charset="UTF-8">
     </head>
     <body class="main-screen__body">
 
         <nav class="header">
             <div class="header-icons">
                 <div class="header-icons__icon"><a href="modes.html"><i class="fas fa-bars"></i></a></div>
-                <div class="header-icons__icon">MEOW</div>
+                <div class="header-icons__icon"><i class="fas fa-cat fa-2x" ></i></div>
                 <div class="header-icons__icon"><a href="settings.html"><i class="fas fa-cog"></i></a></div>
             </div>
 
@@ -16,22 +17,35 @@
 
     <div class="main-column profile">
         <img src="./img/profile.jpg" class="profile__img">
-    </div>
-
-    <div class="main-column profile">
         <div class="profile__name"></div>
     </div>
 
-    <div class="main-column main" id="down__btn">
+    <div class="main-column main" id="toDo__down__btn">
             <div class="main-todo__text">ToDoList</div>
             <i class="fas fa-caret-down"></i>
-           
     </div>
-    <div class="main__box">abcd </div>
-    <div class="main-column main">
+    <div class="toDo__main__box main__box">
+        <form class="js-toDoForm">
+            <input type="text" placeholder="write something to do"/>
+        </form>
+        <ul class="js-toDoList"></ul>
+    </div>
+    <div class="main-column main" id="dDay__down__btn">
        <div class="main-dday__text">D-day</div>
        <i class="fas fa-caret-down"></i>
     </div>
+    <div class="dDay__main__box main__box">
+        <form class="js-dDayForm">
+            <input type="date" id="dateInput"/>
+            <input type="text" placeholder="event">
+            <button id="dateSubmit">submit</button>
+        </form>
+        
+        <div id="dDay__output"></div>
+    </div>
+    <script src="./js/todo.js"></script>
+    <script src="./js/dday.js"></script>
+    <script src="./js/flip.js"></script>
     <script src="./js/main-screen.js"></script>
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
     </body>
